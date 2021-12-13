@@ -27,7 +27,7 @@ const Theory = ({text}) => {
              
     <h2 style={{whiteSpace: "pre-wrap"}}>{text.challengeChoice}</h2>
         
-        : ""
+      
 
     
         </>

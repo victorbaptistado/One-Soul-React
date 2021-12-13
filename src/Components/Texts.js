@@ -1,10 +1,10 @@
-import React from 'react'
+import {React, useState} from 'react'
 import Body from './Body';
 import yogaImage from "./Images/Challenges/01-Yoga-Lady.png";
 import postureImage from "./Images/Challenges/04-Posture.jpg";
 import danceImage from "./Images/Challenges/05-Dance.jpg";
 import freddyMercuryImage from "./Images/Challenges/06-Freddy-Mercury.jpg";
-import { useState } from 'react';
+
 
 
 

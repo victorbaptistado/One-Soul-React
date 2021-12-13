@@ -64,14 +64,13 @@ const Body = ({text, count, setCount}) => {
 
     {/*---- Progress Bar ---- */}
       {text.progressbar ?
-      <ProgressBar text={text} /> :""}
+      <ProgressBar text={text} count={count}/> :""}
 
       <div className="container2">
 
       {/* ---- SET IMAGE CHALLENGE ----*/}
       {text.imageChallenge ?
-      <ImagesChallenge text={text}/> : ""
-      }
+      <ImagesChallenge text={text}/> : ""}
       </div>
 
       <div className="container1" >

@@ -23,7 +23,7 @@ const Body = ({text, count, setCount}) => {
     setBackground(
       function background () {
       if(text.challenge === true)
-      {return "red"}
+      {return "#cf7348"}
        else {return ""}}
     )
     setBorder(

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6972ab58.chunk.css",
+    "main.js": "/static/js/main.f0444f58.chunk.js",
+    "main.js.map": "/static/js/main.f0444f58.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.350f26a5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.350f26a5.js.map",
+    "static/js/2.0e849268.chunk.js": "/static/js/2.0e849268.chunk.js",
+    "static/js/2.0e849268.chunk.js.map": "/static/js/2.0e849268.chunk.js.map",
+    "static/js/3.06cad7ca.chunk.js": "/static/js/3.06cad7ca.chunk.js",
+    "static/js/3.06cad7ca.chunk.js.map": "/static/js/3.06cad7ca.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6972ab58.chunk.css.map": "/static/css/main.6972ab58.chunk.css.map",
+    "static/js/2.0e849268.chunk.js.LICENSE.txt": "/static/js/2.0e849268.chunk.js.LICENSE.txt",
+    "static/media/01-Yoga-Lady.2fa28d35.png": "/static/media/01-Yoga-Lady.2fa28d35.png",
+    "static/media/04-Posture.625e0823.jpg": "/static/media/04-Posture.625e0823.jpg",
+    "static/media/05-Dance.edfac029.jpg": "/static/media/05-Dance.edfac029.jpg",
+    "static/media/06-Freddy-Mercury.f3106d73.jpg": "/static/media/06-Freddy-Mercury.f3106d73.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.350f26a5.js",
+    "static/js/2.0e849268.chunk.js",
+    "static/css/main.6972ab58.chunk.css",
+    "static/js/main.f0444f58.chunk.js"
+  ]
+}

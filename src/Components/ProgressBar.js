@@ -8,8 +8,6 @@ import ButtonsBottom from './ButtonsBottom';
 const ProgressBar = ({text, count}) => {
 
 
-
-
 /*
     const [toggle, setToggle] = useState("");
  */
@@ -17,10 +15,8 @@ const ProgressBar = ({text, count}) => {
     let [ progress, setProgress] = useState(0);
     const [opacity, setOpacity] = useState(0);
 
-  
-  /*
-    const prevWidth = useRef(); 
-     
+   
+  /*   
       function widthUpdate(){
       setProgress(
         
@@ -33,13 +29,15 @@ const ProgressBar = ({text, count}) => {
     */  
       
 
+      const prev = useRef();
+
       useEffect(()=> 
         setProgress(
         function handle(){
+          prev.current = progress;
         switch(count){
             case 3: 
-          return progress = progress + 10;
-         
+          return progress + 10;
             case 4: 
            return progress + 30;
             case 5:
@@ -55,50 +53,23 @@ const ProgressBar = ({text, count}) => {
             case 11:
             return 100; 
         }}
-      )
-          
-        ,[]);
-   
+      ),  []);
+      
 
-        /*
-         useEffect(()=>{
-            switch(text.id){
-            case 3:
-            
-            return progress + 10;           
-            case 4: 
-           return 30;
-            case 5:
-            return 50; 
-            case 6:
-              return 60;
-            case 7:
-            return 70;
-            case 8:
-            return 80;
-            case 9:
-              return 90;
-            case 11:
-            return 100; 
-      }
-    
-    })
-  
-    setOpacity(
-      function opacityUpdate(){  
-            
-        if(text.id >= 4){
-        return 1;           
-        }
-      })
-  }, [count]);      
- */
+
+      useEffect(()=>
+      setOpacity(
+        function opacityUpdate(){          
+          if(text.id >= 3){
+          return 1;
+        }           
+          }),
+        );
 
     return (
   <>
     <div className="externalProgress" >
-    <div className="internalProgress"  style={{width: `${progress}%`, opacity: 1}}>{progress}</div>
-
+    <div className="internalProgress"   style={{width: `${progress}%`, opacity: `${opacity}`}}>{progress}</div>
     </div> 
         </>
     )

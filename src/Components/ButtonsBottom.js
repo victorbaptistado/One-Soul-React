@@ -1,7 +1,7 @@
 import {React,useEffect} from 'react';
 import ArrowLeft from './Images/Utilities/Arrow-Left3.gif';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLock } from '@fortawesome/free-solid-svg-icons';
+import { faLock, faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -33,7 +33,7 @@ useEffect (() => {
         <div className={`${count > 1 ? "row" :"btnColumns"}`}>
     
         {  text.next ? 
-        <button className="returnbtn" onClick={()=> setCount(-- count)}><img src={ArrowLeft}/></button> :""}
+        <button className="returnbtn" onClick={()=> setCount(-- count)}><FontAwesomeIcon icon={faArrowAltCircleLeft} style={{ fontSize: "5rem",color: "grey"}}/></button> :""}
         {  text.next ? 
         <button className="btn" style={{backgroundColor:`${buttonBackgroundColor}`}} onClick={()=> setCount(++ count)}><span style={{color:`${buttonText}`}}>Next</span></button> : ""} 
         </div>

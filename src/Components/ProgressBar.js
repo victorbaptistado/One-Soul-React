@@ -31,7 +31,7 @@ const ProgressBar = ({text, count}) => {
 
       const prev = useRef();
 
-      useEffect(()=> 
+      useEffect(()=> {
         setProgress(
         function handle(){
           prev.current = progress;
@@ -52,19 +52,14 @@ const ProgressBar = ({text, count}) => {
               return 90;
             case 11:
             return 100; 
-        }}
-      ),  []);
-      
-
-
-      useEffect(()=>
+        }},
       setOpacity(
         function opacityUpdate(){          
           if(text.id >= 3){
           return 1;
         }           
-          }),
-        );
+          }))
+      }, []);
 
     return (
   <>

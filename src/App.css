@@ -161,7 +161,6 @@ input {
   background-color: white;
   border-radius: 2rem;
   cursor: pointer;
-  transition: 1s ease 0.3s;
 }
 
 .btnIntro {
@@ -233,6 +232,7 @@ input {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 select {
   height: 100%;
   margin: 0%;

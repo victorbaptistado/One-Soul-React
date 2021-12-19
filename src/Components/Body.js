@@ -35,7 +35,7 @@ const Body = ({text, count, setCount}) => {
     setButtonBackgroundColor(
       function buttonBackgroundcolor (){
           if(text.challenge === true)
-          {return "#56a5eb"}
+          {return  "#56a5eb"}
           else {return ""}}
     )
     setButtonText(

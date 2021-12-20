@@ -1,5 +1,4 @@
 import {React,useEffect} from 'react';
-import ArrowLeft from './Images/Utilities/Arrow-Left3.gif';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock, faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons';
 

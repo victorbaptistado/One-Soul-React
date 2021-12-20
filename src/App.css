@@ -50,6 +50,13 @@
   margin-right: 30%;
 }
 
+.rowChallenge {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
 .rowExercise {
   display: flex;
   flex-direction: row;
@@ -73,6 +80,17 @@
   height: fit-content;
   padding: 2% 2% 0% 2%;
   margin: 2% 20% 0% 5%;
+  border-radius: 2rem;
+}
+
+.challenge {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-style: inset;
+  text-align: center;
+  height: fit-content;
+  padding: 2%;
+  margin: 2%;
   border-radius: 2rem;
 }
 

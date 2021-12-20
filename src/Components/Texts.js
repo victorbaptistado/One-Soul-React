@@ -188,7 +188,9 @@ Imagination is key to success. Imagination can release a powerfull social mindse
           {           
             challenge: true,
             header: "Challenge!",
-            body: `Coming Soon...`,
+            body: `Now is time.`,
+            bodyChallenge1: "Yes!",
+            bodyChallenge2: "Yes2",
             next: true,
             id: 10,
           },

@@ -84,9 +84,10 @@
 }
 
 .challenge {
-  background-color: white;
+  background-color: rgb(201, 183, 143);
   color: rgb(0, 0, 0);
   border-style: inset;
+  border-color: #ff9472;
   text-align: center;
   height: fit-content;
   padding: 2%;
@@ -224,6 +225,17 @@ input {
   height: 10%;
   border-radius: 90%;
 }
+.challengebtn {
+  border: transparent;
+  color: transparent;
+  background-color: transparent;
+  margin-left: 3%;
+  margin-right: 3%;
+  cursor: pointer;
+}
+
+.challengebtn:hover {
+}
 
 .infobtn {
   /*background-color: rgba(2, 255, 242, 0.637);*/
@@ -263,7 +275,6 @@ select {
 .externalProgress {
   background-color: #d8d8d8;
   border-radius: 20px;
-
   position: relative;
   margin-left: 15%;
   margin-right: 15%;

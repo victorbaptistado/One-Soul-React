@@ -188,42 +188,46 @@ Imagination is key to success. Imagination can release a powerfull social mindse
           {           
             challenge: true,
             header: "Challenge!",
-            body: `
-Now is time to apply what we have learned so far.     
-Click the "forward arrow" to start your first challenge!`,
-            warmUp1: `You're about to go into the field and socialize.
-Before our leap of faith, let's warm-up. 
-Let's boost your social energy.`,
+            body: <h4>
+{`
+Now is time to apply what we have learned so far.  
+Click the "forward arrow" to start your first challenge!`}</h4>,
+            warmUp1: <h4>{`You're about to go into the field and socialize.
+Before your leap of faith, let's warm-up. 
+Let's boost your social energy.`}</h4>,
 
-            warmUp2: `Remember? Good posture! 
+            warmUp2: <h4>{`Remember? 
+Good posture! 
 Straight up your column, erected. 
-Face right the horizon, shoulders falling to the back.`,
+Face right the horizon, shoulders falling to the back.`}</h4>,
 
-            warmUp3: `Now choose a song with loads of energy in it. 
+            warmUp3: <h4>{`Now choose a song with loads of energy in it. 
 Start dancing, follow its rythm. Don't be shy! 
 You don't need to dance good.
 As crazy as you go, the better.
 Imitate an animal if you want, beastialize yourself. 
-Come on, release your inner energy!`,
+Come on, release your inner energy!`}</h4>,
 
-            warmUp4: `Now find a gesture that simbolizes 
+            warmUp4: <h4>{`Now find a gesture that simbolizes 
 all the energy you've awaken from that dance. 
 Hold that gesture. You've got all your energy right there! 
-Remember that.`,
+Remember that.`}</h4>,
 
-            warmUp5: `Last, but not least - before you go to the field and socialize: smile.
+            warmUp5: <h4>{`Last, but not least... 
+before you go to the field and socialize: smile.
 Open up that shiny smile. Even if you don't actually want to, do it. 
-Now, your quest is about to begin.`,
+Now, your quest is about to begin.`}</h4>,
 
-            mainChallenge:`Now that you boosted your energy, 
+            mainChallenge:<h4>{`Now that you boosted your energy, 
 is time to go to the field and socialize.
 
 Remember: that's a very normal thing. 
-Of course you will talk with him/her! That's what you were made for.
+Of course you will talk with him/her! 
+That's what you were made for.
 You're a social specie, you're meant to do that. 
 Take every interaction with naturality. 
-Every word you say means who you're.
-.`,
+Every word you say means who you're.`}</h4>
+,
 
             next: true,
             id: 10,

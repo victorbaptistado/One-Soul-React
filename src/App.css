@@ -15,7 +15,7 @@
 /* CONTAINERS */
 
 .wrapper {
-  max-width: 90vw;
+  max-width: 135rem;
   min-height: 25vw;
   max-height: fit-content;
   justify-items: center;
@@ -91,7 +91,7 @@
   text-align: center;
   height: fit-content;
   padding: 2%;
-  margin: 2%;
+  margin: 0%;
   border-radius: 2rem;
 }
 

@@ -44,6 +44,7 @@ const Challenge = ({text}) => {
   
   
         <>   
+        
         <p style={{textAlign:"center", whiteSpace: "pre-wrap"}}>{text.body}</p>
         <button className="challengebtn" onClick={()=>challengeNow(count++)} >
         <FontAwesomeIcon icon={faAngleDoubleRight} style={{color:"blueviolet", height: "10rem", width: "5rem"}} /> 
@@ -61,6 +62,9 @@ const Challenge = ({text}) => {
         switch(count){
         case 1:
         return <>
+     
+        <FontAwesomeIcon icon={faAngleDoubleRight} style={{color:"rgb(201, 183, 143)", height: "10rem", width: "5rem"}} /> 
+      
         <p style={{ whiteSpace: "pre-wrap"}}>{text.warmUp1}</p>
         <button className="challengebtn" onClick={()=>challengeNow(count++)}>
         <FontAwesomeIcon icon={faAngleDoubleRight} style={{color:"blueviolet", height: "10rem", width: "5rem"}} /> 
@@ -124,11 +128,13 @@ const Challenge = ({text}) => {
         <button className="challengebtn" onClick={()=>challengeNow(count--)}>
         <FontAwesomeIcon icon={faAngleDoubleLeft} style={{color:"blueviolet", height: "10rem", width: "5rem"}} /> 
         </button> 
+        <p style={{whiteSpace: "pre-wrap"}}>{text.mainChallenge}</p>
 
-        <p style={{whiteSpace: "pre-wrap"}}>{text.mainChallenge}</p>;
+        <FontAwesomeIcon icon={faAngleDoubleRight} style={{color:"rgb(201, 183, 143)", height: "10rem", width: "5rem"}} /> 
+
         </>
         }}
-        )};
+        )}
 
 /*
     const challengesFilt = challenges.filter(challenge => challenge.id === count); 

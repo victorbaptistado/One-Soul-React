@@ -82,14 +82,10 @@ For now we'll focus solely on Social Energy and Charisma enhance.
           progressbar: true,
           theoryExerciseAllow: true,
           imageChallenge: true,
-          exercise: `Stand up straight.
+          exercise: `Stand up straight. 
 Shoulders back! 
-Level your head and look above! 
-Upgrade your posture. 
-Every moment when you feel your mood sinking, 
-or when you need to boost your confidence, 
-find that posture.
- `,
+Level your head and look above - upgrade your posture. 
+Every moment when you feel your mood sinking or when you need to boost your confidence, find that posture.`,
 exerciseInfo: `Why is it so important? As body affects mind, finding a correct posture can induce you 
 to a state of equilibrium and optimal energy. 
 It can reduce social anxiety and boost levels of Social Energy.`,
@@ -188,45 +184,48 @@ Imagination is key to success. Imagination can release a powerfull social mindse
           {           
             challenge: true,
             header: "Challenge!",
-            body: <h4>
-{`
-Now is time to apply what we have learned so far.  
-Click the "forward arrow" to start your first challenge!`}</h4>,
-            warmUp1: <h4>{`You're about to go into the field and socialize.
+            body: <h4>{`Now is time to apply what we have learned so far. 
+You're about to go into the field and socialize.
 Before your leap of faith, let's warm-up. 
-Let's boost your social energy.`}</h4>,
-
-            warmUp2: <h4>{`Remember? 
+Let's boost your social energy.
+Click the "forward arrow" to start your first challenge!`}</h4>,
+ 
+            warmUp1: <h4>{`Remember? 
 Good posture! 
 Straight up your column, erected. 
 Face right the horizon, shoulders falling to the back.`}</h4>,
 
-            warmUp3: <h4>{`Now choose a song with loads of energy in it. 
+            warmUp2: <h4>{`Now choose a song with loads of energy in it. 
 Start dancing, follow its rythm. Don't be shy! 
 You don't need to dance good.
 As crazy as you go, the better.
 Imitate an animal if you want, beastialize yourself. 
 Come on, release your inner energy!`}</h4>,
 
-            warmUp4: <h4>{`Now find a gesture that simbolizes 
+            warmUp3: <h4>{`Now find a gesture that simbolizes 
 all the energy you've awaken from that dance. 
 Hold that gesture. You've got all your energy right there! 
 Remember that.`}</h4>,
 
-            warmUp5: <h4>{`Last, but not least... 
+            warmUp4: <h4>{`Last, but not least... 
 before you go to the field and socialize: smile.
 Open up that shiny smile. Even if you don't actually want to, do it. 
 Now, your quest is about to begin.`}</h4>,
 
-            mainChallenge:<h4>{`Now that you boosted your energy, 
-is time to go to the field and socialize.
+            mainChallenge:
+            <h4>{`Now that you boosted your energy, 
+is time to go to the field and socialize.`}</h4>,
 
-Remember: that's a very normal thing. 
+          mainChallengeInfo:
+<h4>{`Remember! 
+That's a very normal thing. 
 Of course you will talk with him/her! 
 That's what you were made for.
-You're a social specie, you're meant to do that. 
+You're a social specie, 
+you're meant to do that. 
 Take every interaction with naturality. 
 Every word you say means who you're.`}</h4>
+
 ,
 
             next: true,

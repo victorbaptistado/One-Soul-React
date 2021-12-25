@@ -7,6 +7,8 @@ import TheoryForm from './TheoryForm';
 import Challenge from './Challenge';
 import ImagesChallenge from './ImagesChallenge';
 import ProgressBar from './ProgressBar';
+import Congratulation from './Congratulation';
+import { useSpring } from 'react-spring';
 
 //import Text from './Text';
 
@@ -19,7 +21,11 @@ const Body = ({text, count, setCount}) => {
   const [buttonBackgroundColor, setButtonBackgroundColor] = useState("");
   const [buttonText, setButtonText] = useState("")
 
+
+
   useEffect(() => {
+
+    /* ---- FOR CHALLENGE ---- */
     setBackground(
       function background () {
       if(text.challenge === true)
@@ -43,9 +49,27 @@ const Body = ({text, count, setCount}) => {
           if(text.challenge === true)
          {return "black"}
          else {return ""}}
-      
     )
-  
+    
+        /* ---- FOR CONGRATULATION ---- */
+        setBackground(
+          function background () {
+          if(text.congratulation === true)
+          {return "#95d4d685"}
+           else {return ""}}
+        )
+        setButtonBackgroundColor(
+          function buttonBackgroundcolor (){
+              if(text.congratulation === true)
+              {return  "silver"}
+              else {return ""}}
+        )
+        setButtonText(
+          function buttonText(){
+              if(text.congratulation === true)
+             {return "black"}
+             else {return ""}}
+        )
 
   },)
   
@@ -87,6 +111,10 @@ const Body = ({text, count, setCount}) => {
       {/*---- CHALLENGE ----*/}
       {text.challenge ? 
       <Challenge  text={text} />:""}
+
+      {/*---- CONGRATULATION ----*/}
+      {text.congratulation ? 
+      <Congratulation text={text} />:""}
 
       </div> 
 

@@ -1,21 +1,42 @@
 
-import {React,useState} from 'react';
+import {React, useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfoCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
+
 const Info = ({text, title}) => {
 
-    
+
+
+
+
+
+
+const [infoAnime, setinfoAnime] = useState(1);
+
+
+  /*
+  {from: {opacity: 0},
+  to:{opacity: 1}, 
+  config: {mass:6, tension:500, friction:18}}));
+  */
+
+  
+
 const [noInfo, setInfo] = useState( "" );
 
 
+  
+
 function appear (){ setInfo (
-<div className="infoBox">
+< div className="infoBox" style={{opacity: `${infoAnime}`}}>
 <button onClick={() => buttonClear()}> <FontAwesomeIcon icon={faTimesCircle} style={{fontSize: "1.5rem", color: "red"}}/></button>
 <h4>{text.exerciseInfo}</h4>
 <p style={{fontFamily: "cursive"},{whiteSpace: "pre-wrap"}}>{text.mainChallengeInfo}</p>
 </div>)
 }
+
+
 
 
 

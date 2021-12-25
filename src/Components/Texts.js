@@ -165,13 +165,6 @@ It's so easy! Let's create yours...`,
               next: true,
               id: 9,
             },
-            { 
-              theory: true,
-              header: "DEMO VERSION",
-              progressbar: true,
-              body: `This app is a demonstration version, still in very early stages.`,
-              id: 11,
-            },
           {           
             theory: true,
             header: "The Magician",
@@ -224,13 +217,34 @@ That's what you were made for.
 You're a social specie, 
 you're meant to do that. 
 Take every interaction with naturality. 
-Every word you say means who you're.`}</h4>
-
-,
-
+Every word you say means who you're.`}</h4>,
             next: true,
             id: 10,
           },
+
+          {
+            congratulation: true,
+            header: "COMPLETED!",
+            progressbar: true,
+            body: `Congratulations! 
+You completed the first part of the course.
+
+What have you learn so far? 
+Body affects mind.
+You can use body to direct your emotions.
+Therefore, you can boost your social energy via body.
+            
+Next chapter we'll cover the mind.`,
+            next: true,
+            id: 11,
+          },
+          { 
+            theory: true,
+            header: "DEMO VERSION",
+            body: `This app is a demonstration version, still in very early stages.`,
+            id: 12,
+          },
+
       ])
    
 

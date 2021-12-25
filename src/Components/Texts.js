@@ -207,16 +207,32 @@ Now, your quest is about to begin.`}</h4>,
 
             mainChallenge:
             <h4>{`Now that you boosted your energy, 
-is time to go to the field and socialize.`}</h4>,
+is time to go to the field and socialize.
+Your very first challenge is:
+Walk up to a barista in a coffee-shop and start a conversation.
+
+Ask them how are they doing.
+Make a comment about how busy that place is (or how busy it's not).
+Mix questions and assertive setences (you don't want to be asking questions all the time).
+Assertive setences about the coffee shop, the products, 
+maybe even about the staff's style (if that fits: you don't be too intimate at first).
+Try to be light and funny. Don't be polemic or exagerated.
+Notice when the conversation has ended, then say goodbye - and smile. 
+
+Once you do that, create that habit: have small talks with staff members.
+Coffee shops, supermarkets, restaurants, pubs. Be polite and interested about them. 
+That's a great way to build your social confidence. 
+Those working in costumer services are used to small talks,
+and they might appreaciate some polite attention.`}</h4>,
 
           mainChallengeInfo:
 <h4>{`Remember! 
-That's a very normal thing. 
+That's a very normal thing to do. 
 Of course you will talk with him/her! 
 That's what you were made for.
-You're a social specie, 
-you're meant to do that. 
-Take every interaction with naturality. 
+You're a social specie, you're meant to do that. 
+Take every interaction with naturality 
+(even if it feels weird for you at first, act as it's normal). 
 Every word you say means who you're.`}</h4>,
             next: true,
             id: 10,
@@ -224,10 +240,10 @@ Every word you say means who you're.`}</h4>,
 
           {
             congratulation: true,
-            header: "COMPLETED!",
+            header: "Congratulations!",
             progressbar: true,
-            body: `Congratulations! 
-You completed the first part of the course.
+            body: `
+You've completed the first part of the Social Development course.
 
 What have you learn so far? 
 Body affects mind.

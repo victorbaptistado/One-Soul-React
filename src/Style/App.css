@@ -1,0 +1,368 @@
+/* GENERAL */
+:root {
+  font-size: 62.5%;
+  background-color: #293f53;
+}
+
+* {
+  margin: 0rem;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* CONTAINERS */
+.wrapper {
+  max-width: 135rem;
+  min-height: 25vw;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  justify-items: center;
+  background-color: #f8e4c5;
+  padding: 1.2% 2% 2% 2%;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  border: 5px solid rgba(233, 154, 64, 0.7);
+  -webkit-transition: 1s ease 0.3s;
+  transition: 1s ease 0.3s;
+}
+
+.container1 {
+  margin-top: 1%;
+}
+
+.container1 .exercise {
+  background-color: white;
+  color: red;
+  border-style: dashed;
+  text-align: left;
+  width: 90%;
+  max-width: 70rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2% 2% 0% 2%;
+  margin: 2% 20% 0% 5%;
+  border-radius: 2rem;
+}
+
+.container2 {
+  float: right;
+  margin-top: 1%;
+}
+
+.container2 .image-challenge {
+  shape-outside: circle(20%);
+  margin-top: 0;
+  margin-bottom: 2%;
+  margin-left: 0%;
+  border-radius: 0rem 2rem 0rem 2rem;
+  width: 100%;
+  max-width: 380px;
+}
+
+.infoBox {
+  text-align: center;
+  display: inherit;
+  border-style: ridge;
+  background-color: rgba(0, 0, 255, 0.726);
+  color: white;
+  padding: 1% 2% 1% 2%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0%;
+  border-radius: 2rem;
+}
+
+.challenge {
+  background-color: #c9b78f;
+  color: black;
+  border-style: inset;
+  border-color: #ff9472;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0%;
+  margin: 0%;
+  border-radius: 2rem;
+}
+
+.challenge .challengeContainer {
+  display: inline-block;
+}
+
+.congratulation {
+  background-color: #e8f2fc;
+  text-align: center;
+  border-radius: 5rem;
+  border-color: rgba(65, 180, 180, 0.13);
+  border-style: groove;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1% 0% 2% 0%;
+}
+
+/* ---- DISPLAY ---- */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 20%;
+  margin-right: 30%;
+}
+
+.center {
+  text-align: center;
+}
+
+/*
+  .rowChallenge {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+  }
+  */
+.rowExercise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: left;
+  margin-left: 12%;
+  margin-right: 56%;
+}
+
+.rowMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/* TEXT */
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 1rem;
+  color: #f1e20d;
+}
+
+h2 {
+  font-size: 3rem;
+  padding: 0rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  padding: 2rem 0px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.9rem;
+  text-align: center;
+  margin: 0%;
+}
+
+h5 {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+p {
+  font-size: 2rem;
+  text-align: justify;
+  margin: 0% 0% 0% 0%;
+}
+
+input {
+  font-size: 2.3rem;
+  max-width: 90%;
+  margin-bottom: 2%;
+  padding: 0%;
+}
+
+/* BUTTONS */
+.btn {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  height: 5rem;
+  text-align: center;
+  border: 0.1rem solid #56a5eb;
+  margin-top: 2.8rem;
+  margin-bottom: 0%;
+  text-decoration: none;
+  color: #56a5eb;
+  background-color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(255, 0, 0, 0.623);
+  color: white;
+}
+
+.btnColumns {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btnColumns .btnIntro {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid #56a5eb;
+  margin-bottom: 0%;
+  margin-top: 1%;
+  text-decoration: none;
+  color: #edf1f5;
+  background-color: #e99a40;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btnColumns .btnIntro:hover {
+  background-color: rgba(255, 0, 0, 0.623);
+}
+
+.returnbtn {
+  background-color: transparent;
+  border-style: none;
+  height: 0%;
+  margin-right: 10%;
+  margin-top: 2.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.returnbtn:hover {
+  background-color: rgba(255, 0, 0, 0.623);
+}
+
+.infobtn {
+  /*background-color: rgba(2, 255, 242, 0.637);*/
+  border-style: ridge;
+  border-radius: 70%;
+  padding: 0rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1.4%;
+}
+
+.infobtn:hover {
+  background-color: rgba(255, 0, 0, 0.623);
+}
+
+.homebtn {
+  margin: 0%;
+  width: 3.8%;
+  height: 10%;
+  border-radius: 50%;
+  padding: 0.1%;
+}
+
+.homebtn:hover {
+  background-color: rgba(255, 0, 0, 0.623);
+}
+
+.challengebtn {
+  border: transparent;
+  color: transparent;
+  background-color: transparent;
+  height: 0rem;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 5%;
+  padding: 0%;
+  cursor: pointer;
+}
+
+/* ---- SELECT STYLING --- */
+.select {
+  margin-top: 2.3rem;
+  margin-left: 12rem;
+  position: static;
+  width: 10em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: 0.25em;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+select {
+  height: 100%;
+  margin: 0%;
+  padding: 0 0 0 0.5em;
+  color: #fff;
+}
+
+/* PROGRESS BAR */
+.externalProgress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: relative;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 30px;
+  width: 70%;
+}
+
+.internalProgress {
+  background: -webkit-gradient(linear, right top, left top, from(#f2709c), to(#ff9472));
+  background: linear-gradient(to left, #f2709c, #ff9472);
+  -webkit-box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+          box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+  border-radius: 20px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 0;
+  -webkit-transition: 1s ease 0.3s;
+  transition: 1s ease 0.3s;
+  height: 3rem;
+}
+/*# sourceMappingURL=App.css.map */

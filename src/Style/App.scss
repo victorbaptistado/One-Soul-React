@@ -1,6 +1,11 @@
 $golden: #f1e20d;
 $hoverred: rgba(255, 0, 0, 0.623);
 
+@mixin hover {
+  background-color: $hoverred;
+  color: white;
+}
+
 /* GENERAL */
 
 :root {
@@ -18,13 +23,14 @@ $hoverred: rgba(255, 0, 0, 0.623);
 /* CONTAINERS */
 
 .wrapper {
-  max-width: 135rem;
+  max-width: 120rem;
   min-height: 25vw;
   max-height: fit-content;
   justify-items: center;
   background-color: rgb(248, 228, 197);
   padding: 1.2% 2% 2% 2%;
   margin: 0 auto;
+  margin-bottom: 2rem;
   border-radius: 1.5rem;
   border: 5px solid rgba(233, 154, 64, 0.7);
   transition: 1s ease 0.3s;
@@ -32,7 +38,6 @@ $hoverred: rgba(255, 0, 0, 0.623);
 
 .container1 {
   margin-top: 1%;
-
   .exercise {
     background-color: white;
     color: red;
@@ -130,11 +135,6 @@ $hoverred: rgba(255, 0, 0, 0.623);
   margin-right: 56%;
 }
 
-.rowMenu {
-  display: flex;
-  flex-direction: row;
-}
-
 /* TEXT */
 
 h1 {
@@ -191,8 +191,7 @@ input {
   border-radius: 2rem;
   cursor: pointer;
   &:hover {
-    background-color: $hoverred;
-    color: white;
+    @include hover();
   }
 }
 
@@ -213,7 +212,7 @@ input {
     border-radius: 2rem;
     cursor: pointer;
     &:hover {
-      background-color: $hoverred;
+      @include hover();
     }
   }
 }
@@ -227,7 +226,7 @@ input {
   border-radius: 50%;
   cursor: pointer;
   &:hover {
-    background-color: $hoverred;
+    @include hover();
   }
 }
 
@@ -240,7 +239,7 @@ input {
   height: fit-content;
   margin: 1.4%;
   &:hover {
-    background-color: $hoverred;
+    @include hover();
   }
 }
 
@@ -251,7 +250,7 @@ input {
   border-radius: 50%;
   padding: 0.1%;
   &:hover {
-    background-color: $hoverred;
+    @include hover();
   }
 }
 

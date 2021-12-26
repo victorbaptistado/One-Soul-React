@@ -8,7 +8,6 @@ import Challenge from './Challenge';
 import ImagesChallenge from './ImagesChallenge';
 import ProgressBar from './ProgressBar';
 import Congratulation from './Congratulation';
-import { useSpring } from 'react-spring';
 
 //import Text from './Text';
 

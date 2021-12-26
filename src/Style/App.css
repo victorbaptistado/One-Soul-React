@@ -14,7 +14,7 @@
 
 /* CONTAINERS */
 .wrapper {
-  max-width: 135rem;
+  max-width: 120rem;
   min-height: 25vw;
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
@@ -23,6 +23,7 @@
   background-color: #f8e4c5;
   padding: 1.2% 2% 2% 2%;
   margin: 0 auto;
+  margin-bottom: 2rem;
   border-radius: 1.5rem;
   border: 5px solid rgba(233, 154, 64, 0.7);
   -webkit-transition: 1s ease 0.3s;
@@ -151,16 +152,6 @@
   margin-right: 56%;
 }
 
-.rowMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 /* TEXT */
 h1 {
   font-size: 4rem;
@@ -252,6 +243,7 @@ input {
 
 .btnColumns .btnIntro:hover {
   background-color: rgba(255, 0, 0, 0.623);
+  color: white;
 }
 
 .returnbtn {
@@ -266,6 +258,7 @@ input {
 
 .returnbtn:hover {
   background-color: rgba(255, 0, 0, 0.623);
+  color: white;
 }
 
 .infobtn {
@@ -284,6 +277,7 @@ input {
 
 .infobtn:hover {
   background-color: rgba(255, 0, 0, 0.623);
+  color: white;
 }
 
 .homebtn {
@@ -296,6 +290,7 @@ input {
 
 .homebtn:hover {
   background-color: rgba(255, 0, 0, 0.623);
+  color: white;
 }
 
 .challengebtn {

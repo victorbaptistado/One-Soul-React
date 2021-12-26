@@ -20,7 +20,7 @@ const ButtonsHeader = ({  count, setCount }) => {
 
     return (
       
-    <div className="rowMenu">
+    <div>
     {/*  TEXTS: CHALLENGES AND INTRO  */}
         
         

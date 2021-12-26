@@ -7,14 +7,12 @@ import freddyMercuryImage from "./Images/Challenges/06-Freddy-Mercury.jpg";
 
 
 
-
-
 const Texts = () => {
 
 
  
-    const [count, setCount] = useState(1);
-    const [texts, setText] = useState([
+const [count, setCount] = useState(1);
+const [texts, setText] = useState([
         {
           theory: true,
           header: "Are you ready?",

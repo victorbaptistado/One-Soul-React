@@ -29,6 +29,8 @@ const Body = ({text, count, setCount}) => {
       function background () {
       if(text.challenge === true)
       {return "#cf7348"}
+      else if (text.congratulation === true)
+      {return "#95d4d685"}
        else {return ""}}
     )
     setBorder(
@@ -41,34 +43,16 @@ const Body = ({text, count, setCount}) => {
       function buttonBackgroundcolor (){
           if(text.challenge === true)
           {return  "#56a5eb"}
+          else if(text.congratulation === true)
+          {return  "silver"}
           else {return ""}}
     )
     setButtonText(
       function buttonText(){
-          if(text.challenge === true)
+          if(text.challenge || text.congratulations === true)
          {return "black"}
          else {return ""}}
     )
-    
-        /* ---- FOR CONGRATULATION ---- */
-        setBackground(
-          function background () {
-          if(text.congratulation === true)
-          {return "#95d4d685"}
-           else {return ""}}
-        )
-        setButtonBackgroundColor(
-          function buttonBackgroundcolor (){
-              if(text.congratulation === true)
-              {return  "silver"}
-              else {return ""}}
-        )
-        setButtonText(
-          function buttonText(){
-              if(text.congratulation === true)
-             {return "black"}
-             else {return ""}}
-        )
 
   },)
   

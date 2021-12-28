@@ -6,8 +6,6 @@ import Info from "./Info";
 
 const Challenge = ({text}) => {
 
-
-
     
     let [count, setCount] = useState(0);
 
@@ -17,14 +15,16 @@ const Challenge = ({text}) => {
         id: 0,  
         from: {
             opacity: 0,
-            transform: `translate(120px)`,
+            transform: `translate(2rem)`,
             },
         to: {
             opacity: 1,
-            transform: `translate(0px)`,
+            transform: `translate(0rem)`,
         },
         config:{
-            mass:6,
+            mass: 6,
+            
+            
         }
     },
     

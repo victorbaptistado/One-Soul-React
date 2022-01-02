@@ -1,47 +1,45 @@
 import {React, useState} from 'react';
 import {useSpring, animated} from "react-spring";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleRight,  faAngleDoubleLeft, faInfoCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDoubleRight,  faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
 import Info from "./Info";
 
-const Challenge = ({text}) => {
-
-    
+const Challenge = ({text, titleText}) => {
+ 
     let [count, setCount] = useState(0);
 
+    let [fontAnime, setfontAnime] = useState(useSpring({
+
+        from: {
+            color: `black`, width: "10%"},
     
+        to: [{color: `rgb(245, 235, 130)`, width: "100%"},
+        {color: ` rgba(255, 189, 189, 0.596)`}]
+     
+    }))
+ 
     const [spring1, setSpring1 ] = useState(useSpring(
     {  
-        id: 0,  
+
         from: {
             opacity: 0,
-            transform: `translate(2rem)`,
+            width: "0%",
             },
-        to: {
+        to: [{
+            opacity: 0,
+            width: `0%`,
+            },
+        {
             opacity: 1,
-            transform: `translate(0rem)`,
-        },
+            width: `100%`,
+        }],
         config:{
-            mass: 6,
-            
-            
+            mass: 1,            
         }
-    },
-    
+    },  
     ))
-
-    /*
-    const springs = useSpring(datas.length, datas.map(({id,... config}) => config))
-    const springFilt = springs.filter(spring => spring.id === count) 
-
-
-    
-    const springs = useSpring(datas.length, datas.map(({id,... config}) => config)
-    )
-*/
-    
+  
     const arrowStyle = {
-
     color1: "blueviolet",
     color2: "rgb(201, 183, 143)",
     color3: "grey",
@@ -143,7 +141,7 @@ const Challenge = ({text}) => {
     return (
         <>
 
-    <h2 >{text.header}</h2>
+    <animated.h2 style={fontAnime}>{text.header}</animated.h2>
         <br/><br/>
   
         

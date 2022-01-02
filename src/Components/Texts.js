@@ -176,7 +176,7 @@ Imagination is key to success. Imagination can release a powerfull social mindse
           },
           {           
             challenge: true,
-            header: "Challenge!",
+            header: <h2>Challenge!</h2>,
             body: <h4>{`Now is time to apply what we have learned so far. 
 You're about to go into the field and socialize.
 Before your leap of faith, let's warm-up. 

@@ -19,7 +19,7 @@ const Body = ({text, count, setCount}) => {
   const [border, setBorder] = useState("");
   const [buttonBackgroundColor, setButtonBackgroundColor] = useState("");
   const [buttonText, setButtonText] = useState("")
-
+  const [titleText, setTitleText] = useState("")
 
 
   useEffect(() => {
@@ -52,6 +52,12 @@ const Body = ({text, count, setCount}) => {
           if(text.challenge || text.congratulations === true)
          {return "black"}
          else {return ""}}
+    )
+    setTitleText(
+      function titleText(){
+        if(text.challenge === true)
+          {return " rgb(255, 189, 189)"}
+          else {return ""}}
     )
 
   },)
@@ -93,7 +99,7 @@ const Body = ({text, count, setCount}) => {
 
       {/*---- CHALLENGE ----*/}
       {text.challenge ? 
-      <Challenge  text={text} />:""}
+      <Challenge  text={text} titleText={titleText} />:""}
 
       {/*---- CONGRATULATION ----*/}
       {text.congratulation ? 

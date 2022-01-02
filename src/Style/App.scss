@@ -34,6 +34,7 @@ $golden: #f1e20d;
 
 .container1 {
   margin-top: 1%;
+
   .exercise {
     background-color: white;
     color: red;
@@ -43,7 +44,7 @@ $golden: #f1e20d;
     max-width: 70rem;
     height: fit-content;
     padding: 2% 2% 0% 2%;
-    margin: 2% 20% 0% 5%;
+    margin: 2% 20% 0% 0%;
     border-radius: 2rem;
   }
 }
@@ -55,7 +56,6 @@ $golden: #f1e20d;
     shape-outside: circle(20%);
     margin-top: 0;
     margin-bottom: 2%;
-    margin-left: 0%;
     border-radius: 0rem 2rem 0rem 2rem;
     width: 100%;
     max-width: 380px;
@@ -89,6 +89,9 @@ $golden: #f1e20d;
 }
 
 .congratulation {
+  @media (max-width: 960px) {
+    padding: 10% 0% 10% 0%;
+  }
   background-color: #e8f2fc;
   text-align: center;
   border-radius: 5rem;
@@ -134,6 +137,9 @@ $golden: #f1e20d;
 
 h1 {
   font-size: 4rem;
+  @media (max-width: 960px) {
+    font-size: 3.4rem;
+  }
   text-align: center;
   padding: 1rem;
   color: $golden;

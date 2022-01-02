@@ -16,7 +16,8 @@ const Theory = ({text}) => {
   
     {/* Text Centralize due to Image*/}
     {text.imageChallenge ? 
-    <p style={{whiteSpace: "pre-wrap"}}>{text.body}</p>
+    <div className='container1'>
+    <p style={{whiteSpace: "pre-wrap"}}>{text.body}</p></div>
     : <p style={{textAlign:"center", whiteSpace: "pre-wrap"}}>{text.body}</p>
     }
 

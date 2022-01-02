@@ -119,7 +119,8 @@ Find songs that works for you in each occasion.`,
 But how? It may sound weird, but start dancing! 
 Yes, dance alone, dance with yourself. 
 That way you're warming up your Social Energy, boosting your mood.   
-You're getting ready for the social occasion. Have fun!
+You're getting ready for the social occasion. 
+Have fun!
  `,
  exerciseInfo: `Remember, body affects mind: 
  Once you start moving, following the song's rythm, you're altering your inner state. 
@@ -135,7 +136,8 @@ You're getting ready for the social occasion. Have fun!
             progressbar: true,
             imageChallenge: true,
             body: `Have you asked yourself why artists have their own signature moves? 
-Look at that picture, Freddy Mercury signature's gesture he evoqued in literally every concert.
+Look at that picture... 
+Freddy Mercury signature's gesture that he evoqued in literally every concert.
           
 Many artists do that intuitively, they are gathered by the song.
 Their gestures helps them flow into the mood. 

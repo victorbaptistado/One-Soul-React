@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Congratulation = ({text}) => {
+const Congratulation = ({text, count, setCount}) => {
 
 
     return (
@@ -9,6 +9,7 @@ const Congratulation = ({text}) => {
 
            <h4 style={{whiteSpace: "pre-wrap"}}>{text.body}</h4>
 
+        <button className='btn' onClick={()=>setCount(++count)} >NEXT CHAPTER</button>
            
         </div>
     )

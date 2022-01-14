@@ -2,6 +2,7 @@
 import React, { useState,useEffect } from 'react';
 import ButtonsBottom from './ButtonsBottom';
 import ButtonsHeader from './ButtonsHeader';
+import Texts from './Texts';
 import Theory from './Theory';
 import TheoryForm from './TheoryForm';
 import Challenge from './Challenge';
@@ -11,9 +12,7 @@ import Congratulation from './Congratulation';
 
 //import Text from './Text';
 
-const Body = ({text, count, setCount}) => {
-
-
+const Body = ({text, count, setCount, countChapter1, setCountChapter1}) => {
   
   const [background, setBackground] = useState("");
   const [border, setBorder] = useState("");
@@ -62,7 +61,7 @@ const Body = ({text, count, setCount}) => {
 
   },)
   
- 
+ console.log(countChapter1)
 
 
     return (
@@ -73,11 +72,16 @@ const Body = ({text, count, setCount}) => {
 <>
     {/*---- Header Button ---- */}
       <div key={text.id} >
-      <ButtonsHeader count={count} setCount={setCount}/>
+      <ButtonsHeader count={count} setCount={setCount} 
+      countChapter1={countChapter1} setCountChapter1={setCountChapter1} />
 
-    {/*---- Progress Bar ---- */}
+
+      {/*---- Progress Bar ---- */}
+     
       {text.progressbar ?
-      <ProgressBar text={text} count={count}/> :""}
+      <ProgressBar text={text} count={count}
+      countChapter1={countChapter1}/> :""}
+      
 
       <div className="container2">
 
@@ -103,14 +107,16 @@ const Body = ({text, count, setCount}) => {
 
       {/*---- CONGRATULATION ----*/}
       {text.congratulation ? 
-      <Congratulation text={text} />:""}
+      <Congratulation text={text} count={count} setCount={setCount} />:""}
 
       </div> 
 
       </div>
 
       {/* ---- GENERAL BUTTONS ---- */ }
-      <ButtonsBottom text={text} count={count} setCount={setCount} buttonBackgroundColor={buttonBackgroundColor} buttonText={buttonText}/>
+      <ButtonsBottom text={text} count={count} setCount={setCount} 
+      buttonBackgroundColor={buttonBackgroundColor} buttonText={buttonText}
+      countChapter1={countChapter1} setCountChapter1={setCountChapter1}/>
       </>
       </div>
           

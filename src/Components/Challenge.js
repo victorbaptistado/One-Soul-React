@@ -27,9 +27,9 @@ const Challenge = ({text, titleText}) => {
             },
         to: [{
             opacity: 0,
-            width: `0%`,
+            width: "0%",
             },
-        {
+            {
             opacity: 1,
             width: `100%`,
         }],

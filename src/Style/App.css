@@ -229,7 +229,7 @@ input {
   margin-right: 30%;
 }
 
-.row .btn {
+.btn {
   font-size: 1.8rem;
   padding: 1rem 0;
   width: 20rem;
@@ -244,12 +244,12 @@ input {
   cursor: pointer;
 }
 
-.row .btn:hover {
+.btn:hover {
   background-color: rgba(255, 0, 0, 0.623);
   color: white;
 }
 
-.row .returnbtn {
+.returnbtn {
   background-color: transparent;
   border-style: none;
   height: 0%;
@@ -259,7 +259,7 @@ input {
   cursor: pointer;
 }
 
-.row .returnbtn:hover {
+.returnbtn:hover {
   background-color: rgba(255, 0, 0, 0.623);
   color: white;
 }
@@ -369,6 +369,6 @@ input {
 }
 
 .p {
-  color: #e4e2ce;
+  color: #ffbdbd;
 }
 /*# sourceMappingURL=App.css.map */

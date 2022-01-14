@@ -36,16 +36,14 @@ const ProgressBar = ({text, count}) => {
         function handle(){
           prev.current = progress;
         switch(count){
-            case 3: 
-          return progress + 10;
             case 4: 
-           return progress + 30;
+           return 15;
             case 5:
-            return progress + 50; 
+            return 30; 
             case 6:
-              return 60;
+              return 45;
             case 7:
-            return 70;
+            return 56;
             case 8:
             return 80;
             case 9:

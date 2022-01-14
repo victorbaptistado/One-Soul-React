@@ -1,21 +1,16 @@
 
 import './Style/App.css';
 import Logo from './Components/Logo';
-import Texts from './Components/Texts';
-import { useState } from 'react';
+import Texts from './Components/Texts'
 
 
 
 function App() {
-
-
-
  
   return (
     <>
     <Logo />
- 
-    <Texts />
+    <Texts/>
 
     </>
   );

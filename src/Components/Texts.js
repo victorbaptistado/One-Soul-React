@@ -292,6 +292,8 @@ Let's build your mindset now!
       header: "The Magician",
       body: `Imagination is key to successed. Imagination can release a powerfull social mindset.`,
       image: <img className="image-challenge" src={""}/>,
+      return: true,
+      next: true,
       id: 14,
     },
 

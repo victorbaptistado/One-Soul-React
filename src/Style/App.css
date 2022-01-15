@@ -94,6 +94,16 @@
   display: inline-block;
 }
 
+.challenge .challengeBox {
+  border: 3px solid rgba(255, 0, 0, 0.548);
+  border-style: groove;
+  border-radius: 2rem;
+  background-color: rgba(135, 207, 235, 0.493);
+  margin: 4% 0% 4% 0%;
+  padding: 1%;
+  width: 100%;
+}
+
 .congratulation {
   background-color: #e8f2fc;
   text-align: center;

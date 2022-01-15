@@ -204,24 +204,31 @@ Open up that shiny smile. Even if you don't actually want to, do it.
 Now, your quest is about to begin.`}</h4>,
 
         mainChallenge:
+        <>
         <h4>{`Now that you boosted your energy, 
 is time to go to the field and socialize.
-Your very first challenge is:
-Walk up to a barista in a coffee-shop and start a conversation.
+Your very first challenge is:`}</h4>
 
-Ask them how are they doing.
+
+<h4><div className='challengeBox'>
+{`Walk up to a barista in a coffee-shop and start a conversation.`}
+</div></h4>
+
+<h4>{`Ask them how are they doing.
 Make a comment about how busy that place is (or how busy it's not).
-Mix questions and assertive setences (you don't want to be asking questions all the time).
+Mix questions and assertive setences 
+(you don't want to be asking questions all the time).
 Assertive setences about the coffee shop, the products, 
 maybe even about the staff's style (if that fits: you don't be too intimate at first).
 Try to be light and funny. Don't be polemic or exagerated.
-Notice when the conversation has ended, then say goodbye - and smile. 
+Notice when the conversation has ended, then say goodbye - and smile.`} </h4>
 
-Once you do that, create that habit: have small talks with staff members.
+<h4>{`Once you do that, create that habit: have small talks with staff members.
 Coffee shops, supermarkets, restaurants, pubs. Be polite and interested about them. 
 That's a great way to build your social confidence. 
 Those working in costumer services are used to small talks,
-and they might appreaciate some polite attention.`}</h4>,
+and they might appreaciate some polite attention.`}</h4>
+</>,
 
       mainChallengeInfo:
 <h4>{`Remember! 

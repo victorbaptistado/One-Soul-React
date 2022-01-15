@@ -1,12 +1,13 @@
+import { text } from '@fortawesome/fontawesome-svg-core';
 import React from 'react';
 import Menu from './Images/Utilities/Menu.gif';
 
 
-const ButtonsHeader = ({  count, setCount }) => {
+const ButtonsHeader = ({text,  count, setCount }) => {
 
-    const handle = (selectedTopic) =>{
+    const handle1 = (selectedTopic1) =>{
 
-        switch (selectedTopic) {
+        switch (selectedTopic1) {
           case "Body & Mind":
             setCount(4)
             break;
@@ -16,7 +17,23 @@ const ButtonsHeader = ({  count, setCount }) => {
         case "Gesture Anchor":
             setCount(8)
             break;
+        case "Role Model":
+          setCount(9)
+          break;
     }};
+
+
+    const handle2 = (selectedTopic2) =>{
+  
+        switch (selectedTopic2) {
+          case "Mindset Builder":
+            setCount(13)
+            break;
+        case "The Magician":
+            setCount(14)
+            break;
+    }};
+
 
     return (
       
@@ -27,15 +44,29 @@ const ButtonsHeader = ({  count, setCount }) => {
     {count > 1 ?
     <a href="./App.js" className="homebtn"><img src={Menu}/></a> : ""}
 
-    {/*---- selectTOPIC ----*/}
-    {count > 1 ?
-    <><select className="select" onChange={e => {const selectedTopic = e.target.value; handle(selectedTopic) }}>
+    {/*---- selectTOPIC CHAPTER 1 ----*/}
+    {text.chapter1 ?
+    <><select className="select" onChange={e => {const selectedTopic1 = e.target.value; handle1(selectedTopic1) }}>
       <option value={"Select Topic"}>Select Topic</option>
       <option value={"Body & Mind"}>Body & Mind</option>
       <option value={"Music Boost"}>Music Boost</option>
       <option value={"Gesture Anchor"}>Gesture Anchor</option>
+      <option value={"Role Model"}>Role Model</option>
       </select></>: ""
     }
+
+    {/*---- selectTOPIC CHAPTER 2 ----*/}
+    {text.chapter2 ?
+    <><select className="select" onChange={e => {const selectedTopic2 = e.target.value; handle2(selectedTopic2) }}>
+    <option value={"Select Topic"}>Select Topic</option>
+    <option value={"Mindset Builder"}>Mindset Builder</option>
+    <option value={"The Magician"}>The Magician</option>
+    </select></>: ""
+    }
+
+
+
+
       </div>
             
     

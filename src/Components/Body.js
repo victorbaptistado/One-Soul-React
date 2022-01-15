@@ -72,7 +72,7 @@ const Body = ({text, count, setCount, countChapter1, setCountChapter1}) => {
 <>
     {/*---- Header Button ---- */}
       <div key={text.id} >
-      <ButtonsHeader count={count} setCount={setCount} 
+      <ButtonsHeader count={count} setCount={setCount} text={text} 
       countChapter1={countChapter1} setCountChapter1={setCountChapter1} />
 
 

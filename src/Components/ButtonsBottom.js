@@ -37,7 +37,7 @@ useEffect (() => {
         <br/><br/>
             <button className="btnIntro" onClick={()=>setCount(++count)}>Body</button>
 
-            <button className="btnIntro" onClick={()=>setCount(count + 11)}> Mind</button>
+            <button className="btnIntro" onClick={()=>setCount(count + 10)}> Mind</button>
 
             <button className="btnIntro"><FontAwesomeIcon icon={faLock} style={{ fontSize: "2rem",color: "grey"}} /> Charisma</button>
          </div> : ""}

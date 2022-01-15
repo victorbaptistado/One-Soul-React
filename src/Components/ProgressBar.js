@@ -50,6 +50,10 @@ const ProgressBar = ({text, count}) => {
               return 90;
             case 11:
             return 100; 
+            case 13: 
+            return 20;
+             case 14:
+             return 38; 
         }},
       setOpacity(
         function opacityUpdate(){          

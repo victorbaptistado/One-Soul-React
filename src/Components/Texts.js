@@ -50,7 +50,7 @@ const [chapter3, setChapter3] = useState("");
       Click "Next" everytime you complete a challenge.`}</h4>  
       </div>,
       next: true,
-      return: true,
+      returnToChapters: true,
       id: 3
     },
     {
@@ -167,18 +167,7 @@ It's so easy! Let's create yours...`,
         id: 8,
         },
 
-        {
-          chapter1: true,
-          theoryForm: true,
-          header: "Role Model",
-          progressbar: true,
-          body: `Now I want you to think about 3 people who you can model their actions. 
-Write down their names, we'll use them as models to achieve your goals. 
-Reflect about their values and beliefs. In time of doubts, ask yourself: what would they do? `,
-          return: true,          
-          next: true,
-          id: 9,
-        },
+
       {        
         chapter1: true,   
         challenge: true,
@@ -249,7 +238,7 @@ Every word you say means who you're.`}</h4>,
         return: true,        
         next: true,
         
-        id: 10,
+        id: 9,
       },
       {
         chapter1: true,
@@ -266,7 +255,7 @@ Therefore, you can boost your social energy via body.
         
 Next chapter we'll cover the mind.`,
         return: true,
-        id: 11,
+        id: 10,
       },
 
     /* ---- CHAPTER 2 ---- */
@@ -282,8 +271,8 @@ Next chapter we'll cover the mind.`,
       Click "Next" everytime you complete a challenge.`}</h4>  
       </div>,
       next: true,
-      return: true,
-      id: 12
+      returnToChapters: true,
+      id: 11
     },
 
 
@@ -293,29 +282,77 @@ Next chapter we'll cover the mind.`,
       header: "Mindset Builder",
       progressbar: true,
       imageChallenge:true,
-      body: `On Chapter 1 we learned how body affects mind. 
-If you do the exercises suggested, these techniques will become second nature.
-It all starts with the Mind-Set - opening yourself to a richer state. 
-It's time for us to dive into the mind realm.
+      body: `So far we've learned how body affects mind. 
+If you do the exercises suggested in Chapter 1 regularly 
+these techniques will become second nature.
 
-Let's build your mindset now!
+Now it's time for us to dive into the realm of the mind.
+Let's Build your Mind-Set! Let's be opened to a richer state.
       `,
       image: <img className="image-challenge" src={yogaImage}/>,
       return: true,
       next: true,
-      id: 13,
-    
+      id: 12,
     },
+
+    {
+      chapter2: true,
+      theory: true,
+      header: "Awareness!",
+      progressbar: true,
+      body: `To be socially present is to be aware of what surrounds you. 
+Is to leave your inner world, then to engage with the external world.
+
+Awareness is improved by meditation. 
+When we talk about awareness, your breath becomes your best friend - 
+concentrated breathing is the key for awareness.`,
+      return: true,
+      next: true,
+      id: 13,
+      },
+
+    {
+      chapter2: true,
+      theory: true,
+      header: "Presence Meditation",
+      progressbar: true,
+      theoryExerciseAllow: true,
+      imageChallenge: true,
+      exercise: `On construction`,
+exerciseInfo: `
+
+Everytime you lose focus onto something, concentrate for a few seconds on your breathing.
+before reconnecting to.`,
+  image: <img className="image-challenge" src={""}/>,
+  return: true,
+  next: true,
+    id: 14,
+    },
+
+
     {   
       chapter2: true,        
       theory: true,
       header: "The Magician",
       progressbar: true,
-      body: `Imagination is key to successed. Imagination can release a powerfull social mindset.`,
+      body: `Imagination is key to succeed. Imagination can release a powerfull social mindset.`,
       image: <img className="image-challenge" src={""}/>,
       return: true,
       next: true,
-      id: 14,
+      id: 15,
+    },
+
+    {
+      chapter1: true,
+      theoryForm: true,
+      header: "Role Model",
+      progressbar: true,
+      body: `Now I want you to think about 3 people who you can model their actions. 
+Write down their names, we'll use them as models to achieve your goals. 
+Reflect about their values and beliefs. In time of doubts, ask yourself: what would they do? `,
+      return: true,          
+      next: true,
+      id: 16,
     },
 
       { 
@@ -323,9 +360,17 @@ Let's build your mindset now!
         theory: true,
         header: "DEMO VERSION",
         body: `This app is a demonstration version, still in very early stages.`,
-        id: 15,
+        id: 17,
       },
   
+
+`
+      Silence is a highly underestimated art. 
+      To be a good listener is one of the : 
+      Let them speak, lead your thoughts towards what's been told: they will love you for that. 
+`     
+
+
   ]);
 
        

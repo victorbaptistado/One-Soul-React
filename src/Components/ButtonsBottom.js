@@ -49,6 +49,10 @@ useEffect (() => {
     
         {  text.return ? 
         <button className="returnbtn" onClick={()=> setCount(-- count)}><FontAwesomeIcon icon={faArrowAltCircleLeft} style={{ fontSize: "5rem",color: "grey"}}/></button> :""}
+
+        {text.returnToChapters ?
+        <button className="returnbtn" onClick={()=> setCount(2)}><FontAwesomeIcon icon={faArrowAltCircleLeft} style={{ fontSize: "5rem",color: "grey"}}/></button> :""}
+
         {  text.next ? 
         <button className="btn" style={{backgroundColor:`${buttonBackgroundColor}`}} onClick={()=> setCount(++ count)}><span style={{color:`${buttonText}`}}>Next</span></button> : ""} 
       

@@ -38,29 +38,52 @@
   background-color: white;
   color: red;
   border-style: dashed;
-  text-align: left;
-  width: 90%;
-  max-width: 70rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 2% 2% 0% 2%;
-  margin: 2% 20% 0% 0%;
+  margin: 2% 0% 0% 0%;
   border-radius: 2rem;
 }
 
+@media (min-width: 1147px) {
+  .container1 .exercise {
+    width: 100%;
+    max-width: 70rem;
+  }
+}
+
 .container2 {
-  float: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 1%;
 }
 
+@media (min-width: 1147px) {
+  .container2 {
+    display: inline;
+  }
+}
+
 .container2 .image-challenge {
+  display: block;
+  text-align: center;
   shape-outside: circle(20%);
   margin-top: 0;
   margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 0rem 2rem 0rem 2rem;
   width: 100%;
   max-width: 380px;
+}
+
+@media (min-width: 1147px) {
+  .container2 .image-challenge {
+    float: right;
+  }
 }
 
 .infoBox {
@@ -129,25 +152,21 @@
   text-align: center;
 }
 
-/*
-  .rowChallenge {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-  }
-  */
-.rowExercise {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.rowChallenge {
+  /*
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;*/
+}
+
+.rowExercise {
+  /*  display: flex;
+  flex-direction: row;
   text-align: left;
   margin-left: 12%;
   margin-right: 56%;
+  */
 }
 
 /* TEXT */

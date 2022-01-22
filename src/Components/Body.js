@@ -9,6 +9,7 @@ import Challenge from './Challenge';
 import ImagesChallenge from './ImagesChallenge';
 import ProgressBar from './ProgressBar';
 import Congratulation from './Congratulation';
+import useMediaQuery from './Hooks/useMediaQuery';
 
 //import Text from './Text';
 
@@ -20,8 +21,10 @@ const Body = ({text, count, setCount, countChapter1, setCountChapter1}) => {
   const [buttonText, setButtonText] = useState("")
   const [titleText, setTitleText] = useState("")
 
+  const isDesktop = useMediaQuery('(min-width: 960px)');
 
   useEffect(() => {
+
 
     /* ---- FOR CHALLENGE ---- */
     setBackground(
@@ -82,16 +85,21 @@ const Body = ({text, count, setCount, countChapter1, setCountChapter1}) => {
       <ProgressBar text={text} count={count}
       countChapter1={countChapter1}/> :""}
       
-
+      <div className='rowChallenge'>
       <div className="container2">
 
-      {/* ---- SET IMAGE CHALLENGE ----*/}
+
+     {/* ---- SET IMAGE CHALLENGE ----*/}
+  
       {text.imageChallenge ?
       <ImagesChallenge text={text}/> : ""}
       </div>
 
       <div className="container1" >
 
+      {/*---- CHALLENGE ----*/}
+      {text.challenge ? 
+      <Challenge  text={text} titleText={titleText} />:""}
 
       {/*---- THEORY ----*/}
       {text.theory ?
@@ -101,16 +109,14 @@ const Body = ({text, count, setCount, countChapter1, setCountChapter1}) => {
       {text.theoryForm ? 
       <TheoryForm  text={text}/>:""}
 
-      {/*---- CHALLENGE ----*/}
-      {text.challenge ? 
-      <Challenge  text={text} titleText={titleText} />:""}
+
 
       {/*---- CONGRATULATION ----*/}
       {text.congratulation ? 
       <Congratulation text={text} count={count} setCount={setCount} />:""}
 
       </div> 
-
+      </div>
       </div>
 
       {/* ---- GENERAL BUTTONS ---- */ }

@@ -1,5 +1,6 @@
 $hoverred: rgba(255, 0, 0, 0.623);
 $golden: #f1e20d;
+$exerciseDesktop: 1147px;
 
 @mixin hover {
   background-color: $hoverred;
@@ -39,26 +40,37 @@ $golden: #f1e20d;
 .container1 {
   margin-top: 1%;
   .exercise {
+    @media (min-width: $exerciseDesktop) {
+      width: 100%;
+      max-width: 70rem;
+    }
     background-color: white;
     color: red;
     border-style: dashed;
-    text-align: left;
-    width: 90%;
-    max-width: 70rem;
     height: fit-content;
     padding: 2% 2% 0% 2%;
-    margin: 2% 20% 0% 0%;
+    margin: 2% 0% 0% 0%;
     border-radius: 2rem;
   }
 }
 
 .container2 {
-  float: right;
+  @media (min-width: $exerciseDesktop) {
+    display: inline;
+  }
+  flex-direction: row;
   margin-top: 1%;
   .image-challenge {
+    @media (min-width: $exerciseDesktop) {
+      float: right;
+    }
+    display: block;
+    text-align: center;
     shape-outside: circle(20%);
     margin-top: 0;
     margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 0rem 2rem 0rem 2rem;
     width: 100%;
     max-width: 380px;
@@ -120,20 +132,22 @@ $golden: #f1e20d;
 .center {
   text-align: center;
 }
-/*
-  .rowChallenge {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-  }
-  */
-.rowExercise {
+
+.rowChallenge /* Apparently useless */ {
+  /*
   display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;*/
+}
+
+.rowExercise /* Apparently useless */ {
+  /*  display: flex;
   flex-direction: row;
   text-align: left;
   margin-left: 12%;
   margin-right: 56%;
+  */
 }
 
 /* TEXT */

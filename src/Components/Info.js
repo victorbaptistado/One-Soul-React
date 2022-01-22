@@ -46,14 +46,7 @@ const buttonClear = () => { setInfo("")};
 
     return (
         <>
-        <div>
-        <div className="center" >
-        <h5 style={{fontFamily: "cursive"}}>{title}</h5>
-        </div>
-        </div>
-
-    
-        <p style={{fontFamily: "cursive"},{whiteSpace: "pre-wrap"}}>{text.exercise}</p>
+ 
         <div className='center'>
         <button onClick={() => appear()}  className="infobtn"><FontAwesomeIcon icon={faInfoCircle} style={{ fontSize: "4rem",color: "blue"}} /></button> 
         </div>

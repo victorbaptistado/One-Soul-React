@@ -36,24 +36,29 @@ const ProgressBar = ({text, count}) => {
         function handle(){
           prev.current = progress;
         switch(count){
-            case 4: 
-           return 15;
+          /* -- Chapter 1 -- */
             case 5:
-            return 30; 
+            return 20; 
             case 6:
               return 45;
             case 7:
             return 56;
             case 8:
-            return 80;
-            case 9:
-              return 90;
-            case 11:
-            return 100; 
+            return 78;
+            case 10:
+              return 100;
+ 
+
+          /* -- Chapter 2 -- */
+
             case 13: 
             return 20;
              case 14:
-             return 38; 
+             return 36; 
+             case 15:
+              return 48;
+              case 16:
+                return 65;
         }},
       setOpacity(
         function opacityUpdate(){          

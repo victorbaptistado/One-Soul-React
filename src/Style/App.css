@@ -171,9 +171,9 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  /*font-size: 2rem;
   padding: 2rem 0px;
-  text-align: center;
+  text-align: center;*/
 }
 
 h4 {
@@ -288,7 +288,7 @@ input {
   padding: 1rem 0;
   width: 20rem;
   text-align: center;
-  border: 0.1rem solid #56a5eb;
+  border: 0.2rem solid #56a5eb;
   margin-top: 1%;
   text-decoration: none;
   color: #edf1f5;

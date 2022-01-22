@@ -20,7 +20,6 @@ useEffect(() => {
 localStorage.setItem("model1",JSON.stringify(model1));
 }, [model1]); 
 
-
 /*--- MODEL2 ---*/
 const [model2, setModel2] = useState(() => {  
 
@@ -32,7 +31,6 @@ const [model2, setModel2] = useState(() => {
   useEffect(() => {
   localStorage.setItem("model2",JSON.stringify(model2));
   }, [model2]); 
-
 
 /*--- MODEL3 ---*/
 const [model3, setModel3] = useState(() => {  
@@ -62,7 +60,7 @@ const [model3, setModel3] = useState(() => {
 
         <br></br><br></br>
         <form>
-        <h2><input type="text" value={model1} onChange={(e) => setModel1(e.target.value) } placeholder={"model 1"} aria-label="model 1" required/> </h2>
+        <h2><input type="text" value={model1} onChange={(e) => setModel1(e.target.value) } placeholder={"model 1"} aria-label="model 1" /> </h2>
         <h2><input type="text" value={model2} onChange={(e) => setModel2(e.target.value)} placeholder={"model 2"} aria-label="model 2"/></h2>
         <h2><input type="text" value={model3} onChange={(e) => setModel3(e.target.value) } placeholder={"model 3"} aria-label="model 3"/> </h2>
         <br/><br/>

@@ -12,6 +12,11 @@ $exerciseDesktop: 1147px;
 :root {
   font-size: 62.5%;
   background-color: rgb(41, 63, 83);
+  background: -webkit-radial-gradient(
+    circle,
+    rgb(43, 143, 173),
+    rgb(41, 47, 83)
+  );
 }
 
 * {
@@ -340,4 +345,5 @@ input {
 
 .p {
   color: rgb(255, 189, 189);
+  word-wrap: break-word;
 }

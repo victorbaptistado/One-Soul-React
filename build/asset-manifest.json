@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.04df2f65.chunk.css",
-    "main.js": "/static/js/main.75383be5.chunk.js",
-    "main.js.map": "/static/js/main.75383be5.chunk.js.map",
+    "main.css": "/static/css/main.d5ea9c92.chunk.css",
+    "main.js": "/static/js/main.dab255e0.chunk.js",
+    "main.js.map": "/static/js/main.dab255e0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0f4f221d.js",
     "runtime-main.js.map": "/static/js/runtime-main.0f4f221d.js.map",
     "static/js/2.4962e49d.chunk.js": "/static/js/2.4962e49d.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.01a0ca4d.chunk.js": "/static/js/3.01a0ca4d.chunk.js",
     "static/js/3.01a0ca4d.chunk.js.map": "/static/js/3.01a0ca4d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.04df2f65.chunk.css.map": "/static/css/main.04df2f65.chunk.css.map",
+    "static/css/main.d5ea9c92.chunk.css.map": "/static/css/main.d5ea9c92.chunk.css.map",
     "static/js/2.4962e49d.chunk.js.LICENSE.txt": "/static/js/2.4962e49d.chunk.js.LICENSE.txt",
     "static/media/01-Yoga-Lady.2fa28d35.png": "/static/media/01-Yoga-Lady.2fa28d35.png",
     "static/media/04-Posture.625e0823.jpg": "/static/media/04-Posture.625e0823.jpg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.0f4f221d.js",
     "static/js/2.4962e49d.chunk.js",
-    "static/css/main.04df2f65.chunk.css",
-    "static/js/main.75383be5.chunk.js"
+    "static/css/main.d5ea9c92.chunk.css",
+    "static/js/main.dab255e0.chunk.js"
   ]
 }

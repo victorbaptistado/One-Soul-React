@@ -85,8 +85,7 @@ For now we'll focus solely on Social Energy and Charisma enhance.
       progressbar: true,
       theoryExerciseAllow: true,
       imageChallenge: true,
-      exercise: `Stand up straight. 
-Shoulders back! 
+      exercise: `Stand up straight. Shoulders back! 
 Level your head and look above - upgrade your posture. 
 Every moment when you feel your mood sinking or when you need to boost your confidence, find that posture.`,
 exerciseInfo: `Why is it so important? As body affects mind, finding a correct posture can induce you 

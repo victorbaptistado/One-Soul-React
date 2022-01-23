@@ -2,14 +2,13 @@
 import React, { useState,useEffect } from 'react';
 import ButtonsBottom from './ButtonsBottom';
 import ButtonsHeader from './ButtonsHeader';
-import Texts from './Texts';
 import Theory from './Theory';
 import TheoryForm from './TheoryForm';
 import Challenge from './Challenge';
 import ImagesChallenge from './ImagesChallenge';
 import ProgressBar from './ProgressBar';
 import Congratulation from './Congratulation';
-import useMediaQuery from './Hooks/useMediaQuery';
+
 
 //import Text from './Text';
 
@@ -20,8 +19,6 @@ const Body = ({text, count, setCount, countChapter1, setCountChapter1}) => {
   const [buttonBackgroundColor, setButtonBackgroundColor] = useState("");
   const [buttonText, setButtonText] = useState("")
   const [titleText, setTitleText] = useState("")
-
-  const isDesktop = useMediaQuery('(min-width: 960px)');
 
   useEffect(() => {
 

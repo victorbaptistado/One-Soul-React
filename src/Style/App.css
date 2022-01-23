@@ -2,13 +2,14 @@
 :root {
   font-size: 62.5%;
   background-color: #293f53;
+  background: -webkit-radial-gradient(circle, #187194, #292f53);
 }
 
 * {
   margin: 0rem;
   padding: 0px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -56,8 +57,8 @@
 .container2 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   margin-top: 1%;
 }
 
@@ -249,12 +250,12 @@ input {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: 20%;
   margin-right: 30%;
 }
@@ -298,8 +299,8 @@ input {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .btnColumns .btnIntro {
@@ -376,21 +377,27 @@ input {
 }
 
 .externalProgress .internalProgress {
-  background: -webkit-gradient(linear, right top, left top, from(#f2709c), to(#ff9472));
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#f2709c),
+    to(#ff9472)
+  );
   background: linear-gradient(to left, #f2709c, #ff9472);
   -webkit-box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
-          box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
   border-radius: 20px;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100%;
   width: 0;
   -webkit-transition: 1s ease 0.3s;
@@ -400,5 +407,6 @@ input {
 
 .p {
   color: #ffbdbd;
+  word-wrap: break-word;
 }
 /*# sourceMappingURL=App.css.map */

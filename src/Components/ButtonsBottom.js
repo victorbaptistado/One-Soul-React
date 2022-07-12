@@ -4,11 +4,8 @@ import { faLock, faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons'
 
 
 
-const ButtonsBottom = ({text, count, setCount, countChapter1, 
-    setCountChapter1, buttonBackgroundColor, buttonText}) => {
+const ButtonsBottom = ({text, count, setCount, buttonBackgroundColor, buttonText}) => {
 
-console.log(count);
-console.log(countChapter1);
 
 useEffect (() => {
     window.scrollTo(0,0)

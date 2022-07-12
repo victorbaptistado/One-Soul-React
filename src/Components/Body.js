@@ -61,26 +61,19 @@ const Body = ({text, count, setCount, countChapter1, setCountChapter1}) => {
 
   },)
   
- console.log(countChapter1)
-
-
     return (
   
-
     <div className="wrapper" style={{border:`${border}`, backgroundColor:`${background}`}}>
-
 <>
     {/*---- Header Button ---- */}
       <div key={text.id} >
-      <ButtonsHeader count={count} setCount={setCount} text={text} 
-      countChapter1={countChapter1} setCountChapter1={setCountChapter1} />
+      <ButtonsHeader count={count} setCount={setCount} text={text}/>
 
 
       {/*---- Progress Bar ---- */}
      
       {text.progressbar ?
-      <ProgressBar text={text} count={count}
-      countChapter1={countChapter1}/> :""}
+      <ProgressBar text={text} count={count}/> :""}
       
       <div className='rowChallenge'>
       <div className="container2">
@@ -119,7 +112,7 @@ const Body = ({text, count, setCount, countChapter1, setCountChapter1}) => {
       {/* ---- GENERAL BUTTONS ---- */ }
       <ButtonsBottom text={text} count={count} setCount={setCount} 
       buttonBackgroundColor={buttonBackgroundColor} buttonText={buttonText}
-      countChapter1={countChapter1} setCountChapter1={setCountChapter1}/>
+     />
       </>
       </div>
           

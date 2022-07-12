@@ -49,23 +49,17 @@ const Challenge = ({text, titleText}) => {
     }
 
     const [challenges, setChallenges] = useState(
-  
-  
         <>   
-        
         <FontAwesomeIcon icon={faAngleDoubleRight} style={{color: `${arrowStyle.color2}`, height: `${arrowStyle.height}`, width:`${arrowStyle.width}`}} />     
         <p style={{whiteSpace: "pre-wrap"}}>{text.body}</p>
         <button className="challengebtn" onClick={()=>challengeNow(count++)} >
         <FontAwesomeIcon icon={faAngleDoubleRight} style={{color: `${arrowStyle.color1}`, height: `${arrowStyle.height}`, width:`${arrowStyle.width}`}} /> 
         </button>      
         </>)
-    
 
         function challengeNow() { 
    
-
         setChallenges(
-
  
         function handle (){
         switch(count){

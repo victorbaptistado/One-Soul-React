@@ -15,7 +15,7 @@ const [chapter2, setChapter2] = useState("");
 const [chapter3, setChapter3] = useState("");
 */
   const [count, setCount] = useState(1);
-  const [texts, setTexts] = useState([
+  const [texts] = useState([
 
     /* ---- INTRO ---- */
     {
@@ -43,39 +43,47 @@ const [chapter3, setChapter3] = useState("");
       chapter1: true,
       theory: true,
       header: "INSTRUCTIONS",
-      body:  <div>
-      <h4>{`Welcome to your very first challenge! I guarantee, your life will change. 
-      During this chapter we'll talk about the use of the body to improve your social skills.
-
-      Click "Next" everytime you complete a challenge.`}</h4>  
-      </div>,
+      body:  
+      <>
+        <div>
+          <h4>Welcome to your very first challenge! I guarantee, your life will change. 
+          During this chapter we'll talk about the use of the body to improve your social skills.</h4>
+        </div>
+        <div className='container1'>
+          <h4>Click "Next" everytime you complete a challenge.</h4>  
+        </div>
+      </>,
       next: true,
       returnToChapters: true,
       id: 3
     },
     {
       chapter1: true,
-  theory: true,
-  header:"Body and Mind",
-  progressbar: true,
-
-  body:`Mind affects body. 
-Body affects mind.
-
-What we'll seek during Chapter 1 is to enhance Social Energy via body.
-We'll focus on the correct use of the body & how you can alter your inner state simply by moving it. 
-Using your body correctly is definitely the easiest path 
-for a mindset change that will lead you to an active social presence. 
-
-Remember: a good body starts with healthy habits, thus take care of your body!
-Improve your diet, do physical exercises regularly (lifting weights, jogging, martial arts), stretch everyday -  
-These are the foundations for social presence. 
-We won't dive too deep into topics of Health during this course.
-Later courses will show you how to do that. 
-For now we'll focus solely on Social Energy and Charisma enhance.
-`,
-    return: true,
-    next: true,
+      theory: true,
+      header:"Body and Mind",
+      progressbar: true,
+      body:
+      <>
+        <div>
+          <p className='center'>Mind affects body. Body affects mind.</p>
+        </div>
+        <div className='container1'>
+          <p className='center'>What we'll seek during Chapter 1 is to enhance Social Energy via body.
+          We'll focus on the correct use of the body & how you can alter your inner state simply by moving it. 
+          Using your body correctly is definitely the easiest path 
+          for a mindset change that will lead you to an active social presence.</p>
+        </div>
+        <div className='container1'>
+          <p className='center'>Remember: a good body starts with healthy habits, thus take care of your body!
+          Improve your diet, do physical exercises regularly (lifting weights, jogging, martial arts), stretch everyday -  
+          These are the foundations for social presence. 
+          We won't dive too deep into topics of Health during this course.
+          Later courses will show you how to do that. 
+          For now we'll focus solely on Social Energy and Charisma enhance.</p>
+        </div>
+      </>,
+      return: true,
+      next: true,
       id: 4,
     },
     {
@@ -85,12 +93,14 @@ For now we'll focus solely on Social Energy and Charisma enhance.
       progressbar: true,
       theoryExerciseAllow: true,
       imageChallenge: true,
-      exercise: `Stand up straight. Shoulders back! 
-Level your head and look above - upgrade your posture. 
-Every moment when you feel your mood sinking or when you need to boost your confidence, find that posture.`,
-exerciseInfo: `Why is it so important? As body affects mind, finding a correct posture can induce you 
-to a state of equilibrium and optimal energy. 
-It can reduce social anxiety and boost levels of Social Energy.`,
+      exercise: 
+      <p>Stand up straight. Shoulders back! 
+      Level your head and look above - upgrade your posture. 
+      Every moment when you feel your mood sinking or when you need to boost your confidence, find that posture.`</p>,
+      exerciseInfo: 
+      <p className='center'>Why is it so important? As body affects mind, finding a correct posture can induce you 
+      to a state of equilibrium and optimal energy. 
+      It can reduce social anxiety and boost levels of Social Energy.</p>,
   image: <img className="image-challenge" src={postureImage}/>,
   return: true,
   next: true,
@@ -101,17 +111,23 @@ It can reduce social anxiety and boost levels of Social Energy.`,
       theory: true,
       header: "Music Boost",
       progressbar: true,
-      body: `Music can be an amazing tool for social presence. 
-It's one of the best ways to alter mind states and boost Social Energy. 
-Loads of researches have found that music benefits memory and cognitive performance, 
-it reduces depression and anxiety - among other benefits. 
-
-Time for fun! Go to your phone, create a playlist (or many as you want). 
-Call it "Social Boost", whatever you may want to identify it. 
-Before an upcoming event, ask yourself: how do you wish to behave? 
-If it's a party or a work meeting which you need to evoque strong social presence, an energetic playlist may suit you. 
-If it's an event in which you need to be on control and intellectually aware, classic music may be the answer.
-Find songs that works for you in each occasion.`,
+      body: 
+      <>
+        <div>
+        <p className='center'>Music can be an amazing tool for social presence. 
+        It's one of the best ways to alter mind states and boost Social Energy.</p>
+        <p className='center'>Loads of researches have found that music benefits memory and cognitive performance, 
+        it reduces depression and anxiety - among other benefits.</p>
+        </div>
+        <div className='container1'>
+        <p className='center'>
+        Time for fun! Go to your phone, create a playlist (or many as you want). 
+        Call it "Social Boost", whatever you may want to identify it. 
+        Before an upcoming event, ask yourself: how do you wish to behave? 
+        If it's a party or a work meeting which you need to evoque strong social presence, an energetic playlist may suit you. 
+        If it's an event in which you need to be on control and intellectually aware, classic music may be the answer.
+        Find songs that works for you in each occasion.</p></div>
+      </>,
       return: true,
       next: true,
       id: 6,
@@ -371,13 +387,8 @@ Reflect about their values and beliefs. In time of doubts, ask yourself: what wo
 
 
   ]);
-
-       
-
-
   
     let textFilt = texts.filter(text => text.id === count) ; 
-
 
     return (
 

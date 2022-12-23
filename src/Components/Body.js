@@ -1,4 +1,3 @@
-
 import React, { useState,useEffect } from 'react';
 import ButtonsBottom from './ButtonsBottom';
 import ButtonsHeader from './ButtonsHeader';

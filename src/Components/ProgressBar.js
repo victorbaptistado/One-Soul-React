@@ -1,80 +1,58 @@
 import React from 'react';
 import { useState, useRef, useEffect } from 'react';
 
-
-
-
-
 const ProgressBar = ({text, count}) => {
 
-
-/*
-    const [toggle, setToggle] = useState("");
- */
-  
-    let [ progress, setProgress] = useState(0);
-    const [opacity, setOpacity] = useState(0);
-
+  let [ progress, setProgress] = useState(0);
+  const [opacity, setOpacity] = useState(0);
    
-  /*   
-      function widthUpdate(){
+  const prev = useRef();
+
+    useEffect(()=> {
       setProgress(
-        
-        function handle(){
-         
-        prevWidth.current = progress;
-         
-        return progress + 10;
-      })};
-    */  
-      
-
-      const prev = useRef();
-
-      useEffect(()=> {
-        setProgress(
         function handle(){
           prev.current = progress;
-        switch(count){
-          /* -- Chapter 1 -- */
+          switch(count){
+            /* -- Chapter 1 -- */
             case 5:
-            return 20; 
+              return 20; 
             case 6:
               return 45;
             case 7:
-            return 56;
+              return 56;
             case 8:
-            return 78;
+              return 78;
             case 10:
               return 100;
- 
 
-          /* -- Chapter 2 -- */
+            /* -- Chapter 2 -- */
 
             case 13: 
-            return 20;
-             case 14:
-             return 36; 
-             case 15:
+              return 20;
+            case 14:
+              return 36; 
+            case 15:
               return 48;
-              case 16:
-                return 65;
-        }},
+            case 16:
+              return 65;
+          }},
       setOpacity(
         function opacityUpdate(){          
           if(text.id >= 3){
           return 1;
         }           
-          }))
+      }))
       }, []);
 
-    return (
+  return (
   <>
     <div className="externalProgress" >
-    <div className="internalProgress"   style={{width: `${progress}%`, opacity: `${opacity}`}}>{progress}</div>
+      <div className="internalProgress" style={{width: `${progress}%`, opacity: `${opacity}`}}>
+        {progress}
+      </div>
     </div> 
-        </>
-    )
+  </>
+  )
 }
 
 export default ProgressBar

@@ -1,7 +1,6 @@
 import React from 'react';
 import oneSoulLogo from "./Images/Utilities/one-soul-logo.gif"
 
-
 const Logo = () => {
     return (
         <div>
